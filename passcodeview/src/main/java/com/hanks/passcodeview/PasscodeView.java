@@ -6,9 +6,6 @@ import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.PorterDuff;
-import android.support.annotation.IntDef;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
@@ -25,6 +22,10 @@ import java.lang.annotation.RetentionPolicy;
 
 import static com.hanks.passcodeview.PasscodeView.PasscodeViewType.TYPE_CHECK_PASSCODE;
 import static com.hanks.passcodeview.PasscodeView.PasscodeViewType.TYPE_SET_PASSCODE;
+
+import androidx.annotation.IntDef;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 
 /**

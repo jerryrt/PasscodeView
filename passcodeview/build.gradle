@@ -1,11 +1,11 @@
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion 29
 
     defaultConfig {
-        minSdkVersion 15
-        targetSdkVersion 26
+        minSdkVersion 19
+        targetSdkVersion 29
         versionCode 2
         versionName "0.1.2"
         vectorDrawables.useSupportLibrary = true
@@ -19,17 +19,9 @@ android {
 }
 
 dependencies {
-    implementation 'com.android.support:appcompat-v7:26.1.0'
-    testImplementation 'junit:junit:4.12'
-}
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.6.0'
+    implementation 'androidx.appcompat:appcompat:1.3.1'
 
-apply plugin: 'com.novoda.bintray-release'
-publish {
-    userOrg = 'hanks-zyh'
-    groupId = 'com.hanks'
-    uploadName = 'PasscodeView'
-    artifactId = 'passcodeview'
-    publishVersion = '0.1.2'
-    desc = 'PasscodeView'
-    website = 'https://github.com/hanks-zyh/PasscodeView'
+    testImplementation 'junit:junit:4.13.2'
 }
